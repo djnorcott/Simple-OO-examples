@@ -3,13 +3,13 @@ require("Wordfiddler.php");
 require("Calculator.php");
 
 # Here we are instantiating a new object from the Wordfiddler class, and passing it a string.
-$wordFiddled = new Wordfiddler("Cheese");
+$wordFiddler = new Wordfiddler("Cheese");
 
 # And here we try out the various methods in turn, to show how it works
-echo $wordFiddled->upperCase() . "<br/>";
-echo $wordFiddled->lowerCase() . "<br/>";
-echo $wordFiddled->giveMeItTwiceForSomeReason() . "<br/>";
-echo $wordFiddled->reverseIt() . "<br/>";
+echo $wordFiddler->upperCase() . "<br/>";
+echo $wordFiddler->lowerCase() . "<br/>";
+echo $wordFiddler->giveMeItTwiceForSomeReason() . "<br/>";
+echo $wordFiddler->reverseIt() . "<br/>";
 
 # And here we try out the calculator - note we don't send it anything as it hasn't got a constructor defined with any parameters
 $calculator = new Calculator();
